@@ -13,7 +13,7 @@ namespace MyProtocolsApp_Isaac
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
+         //   DependencyService.Register<MockDataStore>();
             //definimos la forma de apilar paginas en la pantalla
             //y cual en la primera que mostremos
             MainPage = new NavigationPage(new AppLoginPage());

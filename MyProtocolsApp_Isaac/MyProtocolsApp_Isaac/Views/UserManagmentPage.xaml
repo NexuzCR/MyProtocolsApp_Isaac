@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyProtocolsApp_Isaac.Views.UserManagmentPage">
+    <ContentPage.Content>
+        
+        <StackLayout>
+
+            <Entry x:Name="TxtID" IsEnabled="False" VerticalTextAlignment="Center"/>
+
+            <Entry x:Name="TxtEmail" IsEnabled="False" Placeholder="UserName / Email" Keyboard="Email" ClearButtonVisibility="WhileEditing"/>
+
+
+
+
+           
+
+            <Entry x:Name="TxtName" Placeholder="Name" Keyboard="Text" ClearButtonVisibility="WhileEditing">
+                <Entry.Triggers>
+
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="true">
+                        <Setter Property="BackgroundColor" Value="NavajoWhite"/>
+                        <Setter Property="TextColor" Value="Black"/>
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                    </Trigger>
+
+                </Entry.Triggers>
+            </Entry>
+
+            <Entry x:Name="TxtBackupEmail" Placeholder="Backup/ Email" Keyboard="Email" ClearButtonVisibility="WhileEditing">
+                <Entry.Triggers>
+
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="true">
+                        <Setter Property="BackgroundColor" Value="NavajoWhite"/>
+                        <Setter Property="TextColor" Value="Black"/>
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                    </Trigger>
+
+                </Entry.Triggers>
+            </Entry>
+
+            <Entry x:Name="TxtPhoneNumber" Placeholder="Phone Number" Keyboard="Telephone" ClearButtonVisibility="WhileEditing">
+                <Entry.Triggers>
+
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="true">
+                        <Setter Property="BackgroundColor" Value="NavajoWhite"/>
+                        <Setter Property="TextColor" Value="Black"/>
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                    </Trigger>
+
+                </Entry.Triggers>
+            </Entry>
+
+            <Editor x:Name="TxtAddress" Placeholder="Address" MinimumHeightRequest="200" Keyboard="Text">
+                <Editor.Triggers>
+
+                    <Trigger TargetType="Editor" Property="IsFocused" Value="true">
+                        <Setter Property="BackgroundColor" Value="NavajoWhite"/>
+                        <Setter Property="TextColor" Value="Black"/>
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                    </Trigger>
+
+                </Editor.Triggers>
+
+            </Editor>
+
+
+            <!--en este ejemplo se permite seleccionar el role, incluido el de ADMIN con fines
+            didacticos. en la practica al usuario no deberia poder seleccionar el role-->
+           
+            <StackLayout Orientation="Horizontal" >
+                <Button x:Name="BtnUpdate" Text="Apply" CornerRadius="15" BackgroundColor="Green" FontSize="20" Clicked="BtnUpdate_Clicked"/>
+                <Button x:Name="BtnCancel" Text="Cancel" CornerRadius="15" BackgroundColor="Green" FontSize="20" Clicked="BtnCancel_Clicked"/>
+            </StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyProtocolsApp_Isaac.Views.StartPage"
+             BackgroundImageSource="AppLoginBG">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            
+        <FlexLayout Direction="Column" Padding="40,50" >
+
+                <Label x:Name= "LblUserName" TextColor="White" FontSize="20" 
+                       HorizontalTextAlignment="Center"
+                       Padding="0,0,0,30"/> 
+
+                <Label Text="Select An Action..." TextColor="Black" FontSize="20" 
+                       HorizontalTextAlignment="Center" 
+                       Padding="0,0,0,30"/>
+
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                     
+                    </Grid.RowDefinitions>
+                    
+                    
+                      <Button Grid.Column="0" Grid.Row="0"
+                              x:Name="BtnProtocolManagment" Text="Protocol Managment"
+                              BackgroundColor="Green" TextColor="White" 
+                              HeightRequest="150" WidthRequest="100" CornerRadius="25" BorderColor="#FCF7F7" BorderWidth="2"
+                              Clicked="BtnProtocolManagment_Clicked"/>
+
+                    <Button Grid.Column="1" Grid.Row="0" 
+                            x:Name="BtnUserManagment" Text="User Managment" 
+                            BackgroundColor="#454602" TextColor="White" 
+                            HeightRequest="150" WidthRequest="100" CornerRadius="25" BorderColor="#FDFCFC" BorderWidth="2"
+                            Clicked="BtnUserManagment_Clicked"/>
+
+                    <Button Grid.Column="0" Grid.Row="1" 
+                            x:Name="BtnCategoryManagment" Text="Category Managment" 
+                            BackgroundColor="Blue" TextColor="White" 
+                            HeightRequest="150" WidthRequest="100" CornerRadius="25" BorderColor="#FFFDFD" BorderWidth="2" />
+
+                    <Button Grid.Column="1" Grid.Row="1" 
+                            x:Name="BtnStepsManagment" Text="Steps Managment" 
+                            BackgroundColor="YellowGreen" TextColor="White" 
+                            HeightRequest="150" WidthRequest="100" CornerRadius="25" BorderColor="#FFFDFD" BorderWidth="2" />
+                </Grid>
+            
+           
+        </FlexLayout>
+        
+        
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

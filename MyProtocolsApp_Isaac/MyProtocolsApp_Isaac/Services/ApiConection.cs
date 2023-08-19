@@ -19,7 +19,7 @@ namespace MyProtocolsApp_Isaac.Services
         public static string TestingPrefixURL = "http://192.168.1.125:45455/api/";
 
         public static string ApiKeyName = "PracticaApiKey";
-        public static string ApiValue = "IsaacProgra6Asdzxc12345";
+        public static string ApiKeyValue = "IsaacProgra6Asdzxc12345";
 
     }
 }
